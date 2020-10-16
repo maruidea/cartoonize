@@ -48,10 +48,10 @@ def convert_bytes_to_image(img_bytes):
 def cartoonize():
     try:
         filename = "input.mp4"
-        original_video_path = os.path.join(app.config['UPLOAD_FOLDER_VIDEOS'], filename)
+        original_video_path = os.path.join('static/uploaded_videos', filename)
         
         # Slice, Resize and Convert Video to 15fps
-        modified_video_path = os.path.join(app.config['UPLOAD_FOLDER_VIDEOS'], filename.split(".")[0] + "_modified.mp4")
+        modified_video_path = os.path.join('static/uploaded_videos', filename.split(".")[0] + "_modified.mp4")
         #change the size if you want higher resolution :
         ############################
         # Recommnded width_resize  #
