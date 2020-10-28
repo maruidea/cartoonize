@@ -115,7 +115,7 @@ class WB_Cartoonize:
         cap.release()
         
         st = time.time()
-        skvideo.io.vwrite(output_fname, np.stack(processed_frames), inputdict={'-r':'15/1'}, outputdict={'-r':'15/1'}, verbosity=1)
+        skvideo.io.vwrite(output_fname, np.stack(processed_frames), inputdict={'-r':'30/1'}, outputdict={'-r':'30/1'}, verbosity=1)
         sk_vid_time = time.time() - st
         
         final_name = '{}final_{}'.format(fname.replace(os.path.basename(fname), ''), os.path.basename(output_fname))
